@@ -1,0 +1,36 @@
+# Core
+requests>=2.31.0
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+pytz>=2023.3
+python-dateutil>=2.8.2
+tenacity>=8.2.3
+
+# Notion CRM
+notion-client>=2.2.1
+
+# Email
+jinja2>=3.1.2
+
+# Scraping & enrichment
+beautifulsoup4>=4.12.2
+lxml>=4.9.3
+tldextract>=5.1.1
+email-validator>=2.1.0
+
+# Hosting / deploy
+PyGithub>=2.1.1
+cloudflare>=2.14.0
+
+# Socials (optional, only used by the IG DM branch)
+# Commented out because v2.x is no longer on PyPI. The bot works
+# fine without IG DM; if you want it, install manually after deploy.
+# instagrapi>=2.0.0
+
+# Screenshots — install with: playwright install chromium
+# The pip package installs; the browser doesn't. See nixpacks.toml.
+playwright>=1.40.0
+
+# Testing
+pytest>=7.4.3
+pytest-mock>=3.12.0

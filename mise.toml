@@ -1,0 +1,13 @@
+# mise.toml — configuration for mise (the tool that installs Python).
+#
+# Railway's build system (railpack) calls `mise install` to fetch
+# the Python version. Mise is a separate tool from nixpacks and
+# reads its own config file.
+#
+# The github_attestations check is broken on Railway's mise version
+# (it tries to verify a non-existent attestation for 3.11.9), so we
+# disable it. The pip packages themselves are still authenticated
+# and safe.
+
+[settings]
+python.github_attestations = false

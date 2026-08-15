@@ -1,0 +1,20 @@
+# nixpacks.toml — tells Railway exactly how to build the bot.
+
+# Skip Python GitHub artifact attestations — Railway's mise version
+# is too new and tries to verify them, which fails because the
+# attestation doesn't exist for 3.11.9.
+[settings]
+python = { github_attestations = false }
+
+[phases.setup]
+nixPkgs = ["python311", "chromium"]
+
+[phases.install]
+cmds = [
+    "pip install --upgrade pip",
+    "pip install -r requirements.txt",
+    "playwright install chromium"
+]
+
+[start]
+cmd = "python run.py"
