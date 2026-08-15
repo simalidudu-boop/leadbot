@@ -1,0 +1,11 @@
+# railpack.toml — configuration for Railpack (Railway's new build system).
+# Railpack v0.36+ uses this file instead of nixpacks.toml.
+
+[build]
+provider = "python"
+
+[build.settings]
+pythonVersion = "3.11"
+
+[start]
+cmd = "python run.py"
