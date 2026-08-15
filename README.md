@@ -1,4 +1,4 @@
-# 🌍 Lead-Gen Bot — Africa Small-Business Website Pitcher
+# 🌍 Lead-Gen Bot — Africa Small-Business Website Pitcher 2
 
 An autonomous, **100% free-tier, no credit card required** lead-generation system that:
 
